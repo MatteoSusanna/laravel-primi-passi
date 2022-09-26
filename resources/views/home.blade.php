@@ -49,6 +49,7 @@
     <body>
         <header>
             <ul>
+                <li><a href="/">Home</a></li>
                 @foreach($menu as $voceMenu)
                 <li><a href="{{$voceMenu}}">{{$voceMenu}}</a></li>
                 @endforeach

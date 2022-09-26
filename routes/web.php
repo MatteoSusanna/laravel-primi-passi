@@ -20,7 +20,7 @@ Route::get('/', function () {
         'News',
         'Info'
     ];
-    return view('home', ['menu' => $menu]);
+    return view('Home', ['menu' => $menu]);
 });
 
 Route::get('/ChiSiamo', function(){
