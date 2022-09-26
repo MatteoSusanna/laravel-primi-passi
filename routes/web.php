@@ -14,5 +14,53 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $menu = [
+        'ChiSiamo',
+        'Social',
+        'News',
+        'Info'
+    ];
+    return view('home', ['menu' => $menu]);
 });
+
+Route::get('/ChiSiamo', function(){
+    $menu = [
+        'ChiSiamo',
+        'Social',
+        'News',
+        'Info'
+    ];
+    return view('ChiSiamo', ['menu' => $menu]);
+});
+
+Route::get('/Social', function(){
+    $menu = [
+        'ChiSiamo',
+        'Social',
+        'News',
+        'Info'
+    ];
+    return view('Social', ['menu' => $menu]);
+});
+
+Route::get('/News', function(){
+    $menu = [
+        'ChiSiamo',
+        'Social',
+        'News',
+        'Info'
+    ];
+    return view('News', ['menu' => $menu]);
+});
+
+Route::get('/Info', function(){
+    $menu = [
+        'ChiSiamo',
+        'Social',
+        'News',
+        'Info'
+    ];
+    return view('Info', ['menu' => $menu]);
+});
+
+
